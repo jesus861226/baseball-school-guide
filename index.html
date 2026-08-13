@@ -5,551 +5,556 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>김광림야구학교 취미반 클럽 이용안내</title>
 <style>
-  :root{
-    --bg:#f6f7f9;
-    --card:#ffffff;
-    --border:#e6e7eb;
-    --text:#1c1f26;
-    --sub:#6b7280;
-    --navy:#12274d;
-    --accent:#1a73e8;
-    --accent-soft:#eaf2ff;
-    --warn-bg:#fff6e8;
-    --warn-border:#f3c96b;
-    --ok-bg:#eefaf1;
-    --ok-border:#8fd6a6;
-    --radius:16px;
-  }
-  *{box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  body{
-    margin:0;
-    font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard","Malgun Gothic",sans-serif;
-    background:var(--bg);
-    color:var(--text);
-    line-height:1.6;
-  }
+:root{
+--bg:#f6f7f9;
+--card:#ffffff;
+--border:#e6e7eb;
+--text:#1c1f26;
+--sub:#6b7280;
+--navy:#12274d;
+--accent:#1a73e8;
+--accent-soft:#eaf2ff;
+--warn-bg:#fff6e8;
+--warn-border:#f3c96b;
+--ok-bg:#eefaf1;
+--ok-border:#8fd6a6;
+--radius:16px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+margin:0;
+font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard","Malgun Gothic",sans-serif;
+background:var(--bg);
+color:var(--text);
+line-height:1.6;
+}
 
-  /* Header */
-  .hero{
-    background:linear-gradient(135deg,var(--navy) 0%, #1e3a6e 100%);
-    color:#fff;
-    padding:56px 20px 40px;
-    text-align:center;
-  }
-  .hero .badge{
-    display:inline-block;
-    font-size:13px;
-    letter-spacing:0.5px;
-    background:rgba(255,255,255,0.12);
-    padding:6px 14px;
-    border-radius:999px;
-    margin-bottom:16px;
-  }
-  .hero h1{
-    font-size:30px;
-    margin:0 0 10px;
-    font-weight:800;
-  }
-  .hero p{
-    font-size:15px;
-    color:#cfd9ee;
-    margin:0;
-    max-width:520px;
-    margin:0 auto;
-  }
+/* Header */
+.hero{
+background:linear-gradient(135deg,var(--navy) 0%, #1e3a6e 100%);
+color:#fff;
+padding:56px 20px 40px;
+text-align:center;
+}
+.hero .badge{
+display:inline-block;
+font-size:13px;
+letter-spacing:0.5px;
+background:rgba(255,255,255,0.12);
+padding:6px 14px;
+border-radius:999px;
+margin-bottom:16px;
+}
+.hero h1{
+font-size:30px;
+margin:0 0 10px;
+font-weight:800;
+}
+.hero p{
+font-size:15px;
+color:#cfd9ee;
+margin:0;
+max-width:520px;
+margin:0 auto;
+}
 
-  /* Layout */
-  .wrap{
-    max-width:820px;
-    margin:0 auto;
-    padding:0 20px 80px;
-  }
+/* Layout */
+.wrap{
+max-width:820px;
+margin:0 auto;
+padding:0 20px 80px;
+}
 
-  /* TOC */
-  .toc{
-    background:var(--card);
-    border:1px solid var(--border);
-    border-radius:var(--radius);
-    padding:20px 22px;
-    margin-top:-28px;
-    margin-bottom:36px;
-    box-shadow:0 8px 24px rgba(18,39,77,0.08);
-  }
-  .toc h2{
-    font-size:14px;
-    color:var(--sub);
-    margin:0 0 12px;
-    font-weight:700;
-    letter-spacing:0.3px;
-  }
-  .toc ol{
-    list-style:none;
-    margin:0;
-    padding:0;
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:8px 16px;
-  }
-  .toc a{
-    display:flex;
-    align-items:center;
-    gap:8px;
-    color:var(--text);
-    text-decoration:none;
-    font-size:14px;
-    padding:6px 0;
-  }
-  .toc a .n{
-    flex:0 0 auto;
-    width:22px;
-    height:22px;
-    border-radius:50%;
-    background:var(--accent-soft);
-    color:var(--accent);
-    font-size:12px;
-    font-weight:700;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-  }
-  .toc a:hover{color:var(--accent);}
+/* TOC */
+.toc{
+background:var(--card);
+border:1px solid var(--border);
+border-radius:var(--radius);
+padding:20px 22px;
+margin-top:-28px;
+margin-bottom:36px;
+box-shadow:0 8px 24px rgba(18,39,77,0.08);
+}
+.toc h2{
+font-size:14px;
+color:var(--sub);
+margin:0 0 12px;
+font-weight:700;
+letter-spacing:0.3px;
+}
+.toc ol{
+list-style:none;
+margin:0;
+padding:0;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:8px 16px;
+}
+.toc a{
+display:flex;
+align-items:center;
+gap:8px;
+color:var(--text);
+text-decoration:none;
+font-size:14px;
+padding:6px 0;
+}
+.toc a .n{
+flex:0 0 auto;
+width:22px;
+height:22px;
+border-radius:50%;
+background:var(--accent-soft);
+color:var(--accent);
+font-size:12px;
+font-weight:700;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+.toc a:hover{color:var(--accent);}
 
-  /* Section */
-  section.block{
-    background:var(--card);
-    border:1px solid var(--border);
-    border-radius:var(--radius);
-    padding:28px 26px;
-    margin-bottom:18px;
-    scroll-margin-top:20px;
-  }
-  section.block h2{
-    display:flex;
-    align-items:center;
-    gap:10px;
-    font-size:19px;
-    margin:0 0 14px;
-    font-weight:800;
-  }
-  section.block h2 .num{
-    flex:0 0 auto;
-    width:30px;
-    height:30px;
-    border-radius:9px;
-    background:var(--navy);
-    color:#fff;
-    font-size:14px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-  }
-  section.block h3{
-    font-size:15px;
-    margin:20px 0 8px;
-    font-weight:700;
-    color:var(--navy);
-  }
-  section.block p{
-    margin:0 0 10px;
-    font-size:14.5px;
-    color:#33363d;
-  }
-  section.block ul{
-    margin:8px 0 12px;
-    padding-left:20px;
-  }
-  section.block li{
-    font-size:14.5px;
-    margin-bottom:4px;
-    color:#33363d;
-  }
+/* Section */
+section.block{
+background:var(--card);
+border:1px solid var(--border);
+border-radius:var(--radius);
+padding:28px 26px;
+margin-bottom:18px;
+scroll-margin-top:20px;
+}
+section.block h2{
+display:flex;
+align-items:center;
+gap:10px;
+font-size:19px;
+margin:0 0 14px;
+font-weight:800;
+}
+section.block h2 .num{
+flex:0 0 auto;
+width:30px;
+height:30px;
+border-radius:9px;
+background:var(--navy);
+color:#fff;
+font-size:14px;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+section.block h3{
+font-size:15px;
+margin:20px 0 8px;
+font-weight:700;
+color:var(--navy);
+}
+section.block p{
+margin:0 0 10px;
+font-size:14.5px;
+color:#33363d;
+}
+section.block ul{
+margin:8px 0 12px;
+padding-left:20px;
+}
+section.block li{
+font-size:14.5px;
+margin-bottom:4px;
+color:#33363d;
+}
 
-  /* Callouts */
-  .callout{
-    border-radius:12px;
-    padding:14px 16px;
-    font-size:14px;
-    margin:12px 0;
-  }
-  .callout.warn{ background:var(--warn-bg); border:1px solid var(--warn-border); color:#7a5a00;}
-  .callout.ok{ background:var(--ok-bg); border:1px solid var(--ok-border); color:#1b6a3a;}
-  .callout.gold{ background:#fff9ec; border:1px solid #f0c96a; color:#8a5a00;}
-  .callout strong{display:block; margin-bottom:2px;}
-  .callout.gold .amount{ color:#d64545; font-weight:800; }
+/* Callouts */
+.callout{
+border-radius:12px;
+padding:14px 16px;
+font-size:14px;
+margin:12px 0;
+}
+.callout.warn{ background:var(--warn-bg); border:1px solid var(--warn-border); color:#7a5a00;}
+.callout.ok{ background:var(--ok-bg); border:1px solid var(--ok-border); color:#1b6a3a;}
+.callout.gold{ background:#fff9ec; border:1px solid #f0c96a; color:#8a5a00;}
+.callout strong{display:block; margin-bottom:2px;}
+.callout.gold .amount{ color:#d64545; font-weight:800; }
 
-  .fee-group{
-    margin-bottom:18px;
-  }
-  .fee-group .fee-title{
-    display:flex;
-    align-items:center;
-    gap:8px;
-    font-weight:800;
-    font-size:14.5px;
-    color:var(--navy);
-    margin-bottom:6px;
-  }
-  .fee-group .fee-sub{
-    font-weight:500;
-    color:var(--sub);
-    font-size:13px;
-  }
+.fee-group{
+margin-bottom:18px;
+}
+.fee-group .fee-title{
+display:flex;
+align-items:center;
+gap:8px;
+font-weight:800;
+font-size:14.5px;
+color:var(--navy);
+margin-bottom:6px;
+}
+.fee-group .fee-sub{
+font-weight:500;
+color:var(--sub);
+font-size:13px;
+}
 
-  /* Table */
-  table{
-    width:100%;
-    border-collapse:collapse;
-    margin:12px 0 16px;
-    font-size:14.5px;
-  }
-  th,td{
-    border:1px solid var(--border);
-    padding:10px 14px;
-    text-align:left;
-  }
-  th{
-    background:#f2f4f8;
-    font-weight:700;
-    color:var(--navy);
-  }
-  td.num{ font-weight:700; color:var(--accent);}
+/* Table */
+table{
+width:100%;
+border-collapse:collapse;
+margin:12px 0 16px;
+font-size:14.5px;
+}
+th,td{
+border:1px solid var(--border);
+padding:10px 14px;
+text-align:left;
+}
+th{
+background:#f2f4f8;
+font-weight:700;
+color:var(--navy);
+}
+td.num{ font-weight:700; color:var(--accent);}
 
-  /* Flow steps */
-  .flow{
-    display:flex;
-    flex-wrap:wrap;
-    align-items:center;
-    gap:6px;
-    margin:14px 0;
-  }
-  .flow .step{
-    background:var(--accent-soft);
-    color:var(--accent);
-    font-weight:700;
-    font-size:13.5px;
-    padding:8px 14px;
-    border-radius:999px;
-  }
-  .flow .arrow{ color:var(--sub); font-size:14px;}
+/* Flow steps */
+.flow{
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+gap:6px;
+margin:14px 0;
+}
+.flow .step{
+background:var(--accent-soft);
+color:var(--accent);
+font-weight:700;
+font-size:13.5px;
+padding:8px 14px;
+border-radius:999px;
+}
+.flow .arrow{ color:var(--sub); font-size:14px;}
 
-  /* Checklist */
-  .checklist{ list-style:none; padding:0; margin:10px 0;}
-  .checklist li{
-    display:flex;
-    gap:8px;
-    font-size:14.5px;
-    margin-bottom:6px;
-    color:#33363d;
-  }
-  .checklist li::before{
-    content:"✔";
-    color:var(--accent);
-    font-weight:700;
-    flex:0 0 auto;
-  }
+/* Checklist */
+.checklist{ list-style:none; padding:0; margin:10px 0;}
+.checklist li{
+display:flex;
+gap:8px;
+font-size:14.5px;
+margin-bottom:6px;
+color:#33363d;
+}
+.checklist li::before{
+content:"✔";
+color:var(--accent);
+font-weight:700;
+flex:0 0 auto;
+}
 
-  /* FAQ (accordion) */
-  details.faq{
-    border:1px solid var(--border);
-    border-radius:12px;
-    padding:12px 16px;
-    margin:10px 0;
-    background:#fafbfc;
-  }
-  details.faq summary{
-    cursor:pointer;
-    font-weight:700;
-    font-size:14.5px;
-    color:var(--navy);
-    list-style:none;
-  }
-  details.faq summary::-webkit-details-marker{ display:none; }
-  details.faq summary::before{
-    content:"Q";
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    width:20px;height:20px;
-    background:var(--accent);
-    color:#fff;
-    border-radius:6px;
-    font-size:12px;
-    margin-right:8px;
-  }
-  details.faq[open] summary{ margin-bottom:8px; }
-  details.faq .a{
-    font-size:14.5px;
-    color:#33363d;
-    padding-left:28px;
-  }
+/* FAQ (accordion) */
+details.faq{
+border:1px solid var(--border);
+border-radius:12px;
+padding:12px 16px;
+margin:10px 0;
+background:#fafbfc;
+}
+details.faq summary{
+cursor:pointer;
+font-weight:700;
+font-size:14.5px;
+color:var(--navy);
+list-style:none;
+}
+details.faq summary::-webkit-details-marker{ display:none; }
+details.faq summary::before{
+content:"Q";
+display:inline-flex;
+align-items:center;
+justify-content:center;
+width:20px;height:20px;
+background:var(--accent);
+color:#fff;
+border-radius:6px;
+font-size:12px;
+margin-right:8px;
+}
+details.faq[open] summary{ margin-bottom:8px; }
+details.faq .a{
+font-size:14.5px;
+color:#33363d;
+padding-left:28px;
+}
 
-  /* Contact cards */
-  .contacts{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:14px;
-    margin-top:10px;
-  }
-  .contact-card{
-    background:#f9fafc;
-    border:1px solid var(--border);
-    border-radius:12px;
-    padding:16px;
-    text-align:center;
-  }
-  .contact-card .role{
-    font-size:12.5px;
-    color:var(--sub);
-    margin-bottom:4px;
-  }
-  .contact-card .name{
-    font-size:15px;
-    font-weight:800;
-    margin-bottom:6px;
-  }
-  .contact-card a{
-    display:inline-block;
-    color:var(--accent);
-    font-weight:700;
-    text-decoration:none;
-    font-size:14.5px;
-  }
+/* Contact cards */
+.contacts{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:14px;
+margin-top:10px;
+}
+.contact-card{
+background:#f9fafc;
+border:1px solid var(--border);
+border-radius:12px;
+padding:16px;
+text-align:center;
+}
+.contact-card .role{
+font-size:12.5px;
+color:var(--sub);
+margin-bottom:4px;
+}
+.contact-card .name{
+font-size:15px;
+font-weight:800;
+margin-bottom:6px;
+}
+.contact-card a{
+display:inline-block;
+color:var(--accent);
+font-weight:700;
+text-decoration:none;
+font-size:14.5px;
+}
 
-  footer{
-    text-align:center;
-    color:var(--sub);
-    font-size:12.5px;
-    margin-top:30px;
-  }
+footer{
+text-align:center;
+color:var(--sub);
+font-size:12.5px;
+margin-top:30px;
+}
 
-  @media (max-width:600px){
-    .toc ol{ grid-template-columns:1fr; }
-    .contacts{ grid-template-columns:1fr; }
-    .hero h1{ font-size:24px; }
-    section.block{ padding:22px 18px; }
-  }
+@media (max-width:600px){
+.toc ol{ grid-template-columns:1fr; }
+.contacts{ grid-template-columns:1fr; }
+.hero h1{ font-size:24px; }
+section.block{ padding:22px 18px; }
+}
 </style>
 </head>
 <body>
 
 <div class="hero">
-  <span class="badge">⚾ 등록 전 꼭 읽어주세요</span>
-  <h1>김광림야구학교 취미반 클럽 이용안내</h1>
-  <p>모든 회원에게 동일한 기준으로 운영됩니다. 아래 내용을 확인하시면 등록·결제·결석·보강·셔틀 이용 등 대부분의 궁금증을 해결하실 수 있습니다.</p>
+<span class="badge">⚾ 등록 전 꼭 읽어주세요</span>
+<h1>김광림야구학교 취미반 클럽 이용안내</h1>
+<p>모든 회원에게 동일한 기준으로 운영됩니다. 아래 내용을 확인하시면 등록·결제·결석·보강·셔틀 이용 등 대부분의 궁금증을 해결하실 수 있습니다.</p>
 </div>
 
 <div class="wrap">
 
-  <nav class="toc">
-    <h2>목차</h2>
-    <ol>
-      <li><a href="#s1"><span class="n">1</span>운영 원칙</a></li>
-      <li><a href="#s2"><span class="n">2</span>월 회비 안내</a></li>
-      <li><a href="#s3"><span class="n">3</span>결제 안내</a></li>
-      <li><a href="#s4"><span class="n">4</span>결석 및 보강</a></li>
-      <li><a href="#s5"><span class="n">5</span>질병 및 부상</a></li>
-      <li><a href="#s6"><span class="n">6</span>휴식 및 재등록</a></li>
-      <li><a href="#s7"><span class="n">7</span>셔틀 이용 안내</a></li>
-      <li><a href="#s8"><span class="n">8</span>수업 안내</a></li>
-      <li><a href="#s9"><span class="n">9</span>등록 및 대기</a></li>
-      <li><a href="#s10"><span class="n">10</span>환불 규정</a></li>
-      <li><a href="#s11"><span class="n">11</span>준비물</a></li>
-      <li><a href="#s12"><span class="n">12</span>문의</a></li>
-    </ol>
-  </nav>
+<nav class="toc">
+<h2>목차</h2>
+<ol>
+<li><a href="#s1"><span class="n">1</span>운영 원칙</a></li>
+<li><a href="#s2"><span class="n">2</span>월 회비 안내</a></li>
+<li><a href="#s3"><span class="n">3</span>결제 안내</a></li>
+<li><a href="#s4"><span class="n">4</span>결석 및 보강</a></li>
+<li><a href="#s5"><span class="n">5</span>질병 및 부상</a></li>
+<li><a href="#s6"><span class="n">6</span>휴식 및 재등록</a></li>
+<li><a href="#s7"><span class="n">7</span>셔틀 이용 안내</a></li>
+<li><a href="#s8"><span class="n">8</span>수업 안내</a></li>
+<li><a href="#s9"><span class="n">9</span>등록 및 대기</a></li>
+<li><a href="#s10"><span class="n">10</span>환불 규정</a></li>
+<li><a href="#s11"><span class="n">11</span>준비물</a></li>
+<li><a href="#s12"><span class="n">12</span>문의</a></li>
+</ol>
+</nav>
 
-  <section class="block" id="s1">
-    <h2><span class="num">1</span>운영 원칙</h2>
-    <p><strong>취미반은 '클럽 회원제'로 운영됩니다.</strong></p>
-    <p>취미반은 일반 학원처럼 출석한 횟수만큼 비용을 납부하는 방식이 아니라, 회원이 등록한 요일의 자리를 한 달 동안 확보해드리는 <strong>'클럽 회원제'</strong>로 운영됩니다.</p>
-    <p>시설 임대료, 코치 인건비, 셔틀 운영비, 시설 유지관리비 등 매월 고정적으로 발생하는 운영비를 기반으로 운영되고 있어, 출석 횟수에 따라 회비를 조정하는 방식은 운영하고 있지 않습니다.</p>
-  </section>
+<section class="block" id="s1">
+<h2><span class="num">1</span>운영 원칙</h2>
+<p><strong>취미반은 '클럽 회원제'로 운영됩니다.</strong></p>
+<p>취미반은 일반 학원처럼 출석한 횟수만큼 비용을 납부하는 방식이 아니라, 회원이 등록한 요일의 자리를 한 달 동안 확보해드리는 <strong>'클럽 회원제'</strong>로 운영됩니다.</p>
+<p>시설 임대료, 코치 인건비, 셔틀 운영비, 시설 유지관리비 등 매월 고정적으로 발생하는 운영비를 기반으로 운영되고 있어, 출석 횟수에 따라 회비를 조정하는 방식은 운영하고 있지 않습니다.</p>
+</section>
 
-  <section class="block" id="s2">
-    <h2><span class="num">2</span>월 회비 안내</h2>
-    <p>취미반 회비는 <strong>자리 확보 비용(회원권)</strong>입니다. 수업 유형과 운영 주차에 따라 아래와 같이 적용됩니다.</p>
+<section class="block" id="s2">
+<h2><span class="num">2</span>월 회비 안내</h2>
+<p>취미반 회비는 <strong>자리 확보 비용(회원권)</strong>입니다. 수업 유형과 운영 주차에 따라 아래와 같이 적용됩니다.</p>
 
-    <div class="fee-group">
-      <div class="fee-title">⚾ 1시간 30분 수업 <span class="fee-sub">(월~토요반)</span></div>
-      <table>
-        <tr><th>운영 주차</th><th>월 회비</th></tr>
-        <tr><td>4주 운영</td><td class="num">160,000원</td></tr>
-        <tr><td>5주 운영</td><td class="num">200,000원</td></tr>
-      </table>
-    </div>
+<div class="fee-group">
+<div class="fee-title">⚾ 1시간 30분 수업 <span class="fee-sub">(월~토요반)</span></div>
+<table>
+<tr><th>운영 주차</th><th>월 회비</th></tr>
+<tr><td>4주 운영</td><td class="num">160,000원</td></tr>
+<tr><td>5주 운영</td><td class="num">200,000원</td></tr>
+</table>
+</div>
 
-    <div class="fee-group">
-      <div class="fee-title">🧤 2시간 수업 <span class="fee-sub">(토요 주니어반 / 일요반)</span></div>
-      <table>
-        <tr><th>운영 주차</th><th>월 회비</th></tr>
-        <tr><td>4주 운영</td><td class="num">180,000원</td></tr>
-        <tr><td>5주 운영</td><td class="num">225,000원</td></tr>
-      </table>
-    </div>
+<div class="fee-group">
+<div class="fee-title">🧤 2시간 수업 <span class="fee-sub">(토요 주니어반 / 일요반)</span></div>
+<table>
+<tr><th>운영 주차</th><th>월 회비</th></tr>
+<tr><td>4주 운영</td><td class="num">180,000원</td></tr>
+<tr><td>5주 운영</td><td class="num">225,000원</td></tr>
+</table>
+</div>
 
-    <div class="callout gold">
-      <strong>🏅 형제 할인 / 주 2회 등록 할인 / 추천인 할인</strong>
-      전체 월회비에서 <span class="amount">30,000원</span> 할인됩니다.
-    </div>
+<div class="callout gold">
+<strong>🏅 형제 할인 / 주 2회 등록 할인 / 추천인 할인</strong>
+전체 월회비에서 <span class="amount">30,000원</span> 할인됩니다.
+</div>
 
-    <p style="color:var(--sub); font-size:13.5px;">※ 설날·추석 연휴를 제외한 공휴일 및 대체공휴일은 정상 수업이 진행됩니다.</p>
+<p style="color:var(--sub); font-size:13.5px;">※ 설날·추석 연휴를 제외한 공휴일 및 대체공휴일은 정상 수업이 진행됩니다.</p>
 
-    <h3>자주 묻는 질문</h3>
-    <details class="faq">
-      <summary>이번 달은 3번만 참석하는데 3회만 결제할 수 있나요?</summary>
-      <div class="a">아쉽지만 어렵습니다. 학생마다 원하는 횟수만 결제하는 방식으로 운영할 경우 정원 관리, 보강 운영, 대기 학생 관리, 회원 간 형평성에 어려움이 발생하기 때문에 모든 회원에게 동일한 기준을 적용하고 있습니다.</div>
-    </details>
-  </section>
+<h3>자주 묻는 질문</h3>
+<details class="faq">
+<summary>이번 달은 3번만 참석하는데 3회만 결제할 수 있나요?</summary>
+<div class="a">아쉽지만 어렵습니다. 학생마다 원하는 횟수만 결제하는 방식으로 운영할 경우 정원 관리, 보강 운영, 대기 학생 관리, 회원 간 형평성에 어려움이 발생하기 때문에 모든 회원에게 동일한 기준을 적용하고 있습니다.</div>
+</details>
+</section>
 
-  <section class="block" id="s3">
-    <h2><span class="num">3</span>결제 안내</h2>
-    <h3>결제 방법</h3>
-    <ul class="checklist">
-      <li>성남사랑상품권 (Chak 앱 원격결제)</li>
-      <li>결제선생 링크</li>
-      <li>계좌이체</li>
-      <li>방문 카드결제</li>
-    </ul>
+<section class="block" id="s3">
+<h2><span class="num">3</span>결제 안내</h2>
+<h3>결제 방법</h3>
+<ul class="checklist">
+<li>성남사랑상품권 (Chak 앱 원격결제)</li>
+<li>결제선생 링크</li>
+<li>계좌이체</li>
+<li>방문 카드결제</li>
+</ul>
 
-    <h3>성남사랑상품권 이용 방법</h3>
-    <div class="flow">
-      <span class="step">Chak 앱</span><span class="arrow">→</span>
-      <span class="step">원격결제</span><span class="arrow">→</span>
-      <span class="step">"김광림 야구학교" 검색</span><span class="arrow">→</span>
-      <span class="step">수업 선택</span>
-    </div>
+<div class="callout ok">
+<strong>🏦 계좌이체 안내</strong>
+기업은행 010-9004-2020 (예금주: 분당구B리틀야구단)
+</div>
 
-    <h3>결제 기한</h3>
-    <div class="callout warn">
-      <strong>매월 첫 수업 시작 전까지 납부 부탁드립니다.</strong>
-      원활한 수업 준비를 위해 기한을 지켜주세요.
-    </div>
-  </section>
+<h3>성남사랑상품권 이용 방법</h3>
+<div class="flow">
+<span class="step">Chak 앱</span><span class="arrow">→</span>
+<span class="step">원격결제</span><span class="arrow">→</span>
+<span class="step">"김광림 야구학교" 검색</span><span class="arrow">→</span>
+<span class="step">수업 선택</span>
+</div>
 
-  <section class="block" id="s4">
-    <h2><span class="num">4</span>결석 및 보강</h2>
-    <h3>개인 사정으로 결석하는 경우</h3>
-    <p>여행, 가족 행사, 학원 일정, 개인 일정 등으로 결석하는 경우 환불 및 이월은 어렵습니다.</p>
-    <div class="callout ok">
-      <strong>대신, 결석일 기준 30일 이내에</strong>
-      빈자리가 있는 다른 반으로 보강이 가능합니다.
-    </div>
+<h3>결제 기한</h3>
+<div class="callout warn">
+<strong>매월 첫 수업 시작 전까지 납부 부탁드립니다.</strong>
+원활한 수업 준비를 위해 기한을 지켜주세요.
+</div>
+</section>
 
-    <h3>보강 진행 순서</h3>
-    <div class="flow">
-      <span class="step">보강 신청 페이지 신청</span><span class="arrow">→</span>
-      <span class="step">빈자리 확인</span><span class="arrow">→</span>
-      <span class="step">참석 확정</span>
-    </div>
-    <h3>보강 시 유의사항</h3>
-    <ul>
-      <li>보강은 빈자리가 있을 때만 가능합니다.</li>
-      <li>인기가 많은 요일은 조기 마감될 수 있습니다.</li>
-      <li>학년 및 수업 수준에 따라 다른 반으로 안내될 수 있습니다.</li>
-    </ul>
-  </section>
+<section class="block" id="s4">
+<h2><span class="num">4</span>결석 및 보강</h2>
+<h3>개인 사정으로 결석하는 경우</h3>
+<p>여행, 가족 행사, 학원 일정, 개인 일정 등으로 결석하는 경우 환불 및 이월은 어렵습니다.</p>
+<div class="callout ok">
+<strong>대신, 결석일 기준 30일 이내에</strong>
+빈자리가 있는 다른 반으로 보강이 가능합니다.
+</div>
 
-  <section class="block" id="s5">
-    <h2><span class="num">5</span>질병 및 부상</h2>
-    <p>장기 치료가 필요한 경우에는 <strong>진단서 제출 시</strong> 아래가 가능합니다.</p>
-    <ul class="checklist">
-      <li>회비 이월</li>
-      <li>휴식 처리</li>
-    </ul>
-    <p style="color:var(--sub); font-size:13.5px;">※ 개인 사정 결석과는 운영 기준이 다릅니다.</p>
-  </section>
+<h3>보강 진행 순서</h3>
+<div class="flow">
+<span class="step">보강 신청 페이지 신청</span><span class="arrow">→</span>
+<span class="step">빈자리 확인</span><span class="arrow">→</span>
+<span class="step">참석 확정</span>
+</div>
+<h3>보강 시 유의사항</h3>
+<ul>
+<li>보강은 빈자리가 있을 때만 가능합니다.</li>
+<li>인기가 많은 요일은 조기 마감될 수 있습니다.</li>
+<li>학년 및 수업 수준에 따라 다른 반으로 안내될 수 있습니다.</li>
+</ul>
+</section>
 
-  <section class="block" id="s6">
-    <h2><span class="num">6</span>휴식 및 재등록</h2>
-    <p>장기간 수업 참여가 어려운 경우에는 휴식 신청이 가능합니다. 다만 휴식 기간에는 해당 자리가 대기 학생에게 배정될 수 있습니다.</p>
-    <p>복귀 시에는 당시 정원에 따라 아래와 같이 안내드립니다.</p>
-    <ul class="checklist">
-      <li>즉시 등록</li>
-      <li>대기 등록</li>
-    </ul>
-  </section>
+<section class="block" id="s5">
+<h2><span class="num">5</span>질병 및 부상</h2>
+<p>장기 치료가 필요한 경우에는 <strong>진단서 제출 시</strong> 아래가 가능합니다.</p>
+<ul class="checklist">
+<li>회비 이월</li>
+<li>휴식 처리</li>
+</ul>
+<p style="color:var(--sub); font-size:13.5px;">※ 개인 사정 결석과는 운영 기준이 다릅니다.</p>
+</section>
 
-  <section class="block" id="s7">
-    <h2><span class="num">7</span>셔틀 이용 안내</h2>
-    <h3>등원 / 하원</h3>
-    <p><strong>등원</strong> — 가장 먼 지역부터 순차적으로 승차합니다.</p>
-    <p><strong>하원</strong> — 가장 가까운 지역부터 순차적으로 하차합니다.</p>
+<section class="block" id="s6">
+<h2><span class="num">6</span>휴식 및 재등록</h2>
+<p>장기간 수업 참여가 어려운 경우에는 휴식 신청이 가능합니다. 다만 휴식 기간에는 해당 자리가 대기 학생에게 배정될 수 있습니다.</p>
+<p>복귀 시에는 당시 정원에 따라 아래와 같이 안내드립니다.</p>
+<ul class="checklist">
+<li>즉시 등록</li>
+<li>대기 등록</li>
+</ul>
+</section>
 
-    <h3>탑승 안내</h3>
-    <ul class="checklist">
-      <li>탑승시간보다 3~5분 먼저 도착</li>
-      <li>무단 미탑승 시 다음 장소로 이동</li>
-      <li>직접 등원 또는 결석 시 수업 1시간 전까지 연락</li>
-    </ul>
+<section class="block" id="s7">
+<h2><span class="num">7</span>셔틀 이용 안내</h2>
+<h3>등원 / 하원</h3>
+<p><strong>등원</strong> — 가장 먼 지역부터 순차적으로 승차합니다.</p>
+<p><strong>하원</strong> — 가장 가까운 지역부터 순차적으로 하차합니다.</p>
 
-    <h3>보강 셔틀</h3>
-    <p>보강수업은 원칙적으로 <strong>개별 등원</strong>입니다. 단, 보강 요일 기존 셔틀 정차 지점에서 기존 탑승 학생과 함께 탑승은 가능합니다.</p>
+<h3>탑승 안내</h3>
+<ul class="checklist">
+<li>탑승시간보다 3~5분 먼저 도착</li>
+<li>무단 미탑승 시 다음 장소로 이동</li>
+<li>직접 등원 또는 결석 시 수업 1시간 전까지 연락</li>
+</ul>
 
-    <h3>안전수칙</h3>
-    <ul class="checklist">
-      <li>안전벨트 착용</li>
-      <li>자리 이동 금지</li>
-      <li>창문 밖으로 몸 내밀기 금지</li>
-      <li>큰 소리 및 장난 자제</li>
-    </ul>
+<h3>보강 셔틀</h3>
+<p>보강수업은 원칙적으로 <strong>개별 등원</strong>입니다. 단, 보강 요일 기존 셔틀 정차 지점에서 기존 탑승 학생과 함께 탑승은 가능합니다.</p>
 
-    <h3>차량 내 음식물</h3>
-    <p>음료, 껌, 간식 등 음식물 섭취는 삼가 주세요. 쓰레기는 반드시 직접 가져가 주세요.</p>
-  </section>
+<h3>안전수칙</h3>
+<ul class="checklist">
+<li>안전벨트 착용</li>
+<li>자리 이동 금지</li>
+<li>창문 밖으로 몸 내밀기 금지</li>
+<li>큰 소리 및 장난 자제</li>
+</ul>
 
-  <section class="block" id="s8">
-    <h2><span class="num">8</span>수업 안내</h2>
-    <p>처음 배우는 학생도 쉽게 적응할 수 있도록 아래 순서로 진행됩니다.</p>
-    <div class="flow">
-      <span class="step">워밍업</span><span class="arrow">→</span>
-      <span class="step">기본기</span><span class="arrow">→</span>
-      <span class="step">캐치볼</span><span class="arrow">→</span>
-      <span class="step">상황훈련</span><span class="arrow">→</span>
-      <span class="step">미니게임</span>
-    </div>
-  </section>
+<h3>차량 내 음식물</h3>
+<p>음료, 껌, 간식 등 음식물 섭취는 삼가 주세요. 쓰레기는 반드시 직접 가져가 주세요.</p>
+</section>
 
-  <section class="block" id="s9">
-    <h2><span class="num">9</span>등록 및 대기</h2>
-    <p>요일 변경은 빈자리가 있는 경우 가능합니다. 마감된 반은 대기 등록을 도와드립니다.</p>
-  </section>
+<section class="block" id="s8">
+<h2><span class="num">8</span>수업 안내</h2>
+<p>처음 배우는 학생도 쉽게 적응할 수 있도록 아래 순서로 진행됩니다.</p>
+<div class="flow">
+<span class="step">워밍업</span><span class="arrow">→</span>
+<span class="step">기본기</span><span class="arrow">→</span>
+<span class="step">캐치볼</span><span class="arrow">→</span>
+<span class="step">상황훈련</span><span class="arrow">→</span>
+<span class="step">미니게임</span>
+</div>
+</section>
 
-  <section class="block" id="s10">
-    <h2><span class="num">10</span>환불 규정</h2>
-    <ul>
-      <li>수업 시작 전 등록 취소 시 — 위약금 10%를 제외한 금액을 환불해드립니다.</li>
-      <li>수업이 일부 진행된 경우 — 진행된 수업료를 차감한 후 환불됩니다.</li>
-    </ul>
-  </section>
+<section class="block" id="s9">
+<h2><span class="num">9</span>등록 및 대기</h2>
+<p>요일 변경은 빈자리가 있는 경우 가능합니다. 마감된 반은 대기 등록을 도와드립니다.</p>
+</section>
 
-  <section class="block" id="s11">
-    <h2><span class="num">11</span>준비물</h2>
-    <ul class="checklist">
-      <li>운동복</li>
-      <li>운동화</li>
-      <li>개인 글러브</li>
-      <li>야외수업 시 개인 물병</li>
-    </ul>
-  </section>
+<section class="block" id="s10">
+<h2><span class="num">10</span>환불 규정</h2>
+<ul>
+<li>수업 시작 전 등록 취소 시 — 위약금 10%를 제외한 금액을 환불해드립니다.</li>
+<li>수업이 일부 진행된 경우 — 진행된 수업료를 차감한 후 환불됩니다.</li>
+</ul>
+</section>
 
-  <section class="block" id="s12">
-    <h2><span class="num">12</span>문의</h2>
-    <div class="contacts">
-      <div class="contact-card">
-        <div class="role">📞 취미반</div>
-        <div class="name">김경훈 매니저</div>
-        <a href="tel:010-9319-2795">010-9319-2795</a>
-      </div>
-      <div class="contact-card">
-        <div class="role">📞 선수반</div>
-        <div class="name">김광림 감독</div>
-        <a href="tel:010-9004-2021">010-9004-2021</a>
-      </div>
-    </div>
-  </section>
+<section class="block" id="s11">
+<h2><span class="num">11</span>준비물</h2>
+<ul class="checklist">
+<li>운동복</li>
+<li>운동화</li>
+<li>개인 글러브</li>
+<li>야외수업 시 개인 물병</li>
+</ul>
+</section>
 
-  <footer>김광림야구학교 이용안내 · 회원 모두에게 동일한 기준으로 안내드립니다.</footer>
+<section class="block" id="s12">
+<h2><span class="num">12</span>문의</h2>
+<div class="contacts">
+<div class="contact-card">
+<div class="role">📞 취미반</div>
+<div class="name">김경훈 매니저</div>
+<a href="tel:010-9319-2795">010-9319-2795</a>
+</div>
+<div class="contact-card">
+<div class="role">📞 선수반</div>
+<div class="name">김광림 감독</div>
+<a href="tel:010-9004-2021">010-9004-2021</a>
+</div>
+</div>
+</section>
+
+<footer>김광림야구학교 이용안내 · 회원 모두에게 동일한 기준으로 안내드립니다.</footer>
 </div>
 
 </body>
