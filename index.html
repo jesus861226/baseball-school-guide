@@ -28,6 +28,7 @@ font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard",
 background:var(--bg);
 color:var(--text);
 line-height:1.6;
+word-break:keep-all;
 }
 
 /* Header */
@@ -72,7 +73,7 @@ background:var(--card);
 border:1px solid var(--border);
 border-radius:var(--radius);
 padding:20px 22px;
-margin-top:-28px;
+margin-top:0;
 margin-bottom:36px;
 box-shadow:0 8px 24px rgba(18,39,77,0.08);
 }
@@ -323,9 +324,69 @@ font-size:12.5px;
 margin-top:30px;
 }
 
+/* Fee cards (월 회비) */
+.fee-card{border:1px solid var(--border);border-radius:14px;padding:16px 16px 4px;margin:14px 0;background:#fbfcfe;}
+.fee-head{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;font-weight:800;font-size:15.5px;color:var(--navy);}
+.fee-no{color:var(--accent);}
+.fee-head .per{font-size:13.5px;font-weight:600;color:var(--sub);}
+.fee-head .per b{font-size:17px;color:#d64545;font-weight:800;}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 2px;}
+.chips span{font-size:12.5px;font-weight:600;background:var(--accent-soft);color:var(--accent);padding:4px 10px;border-radius:999px;}
+td.minus,.minus{color:#d64545;font-weight:700;}
+.table-scroll{overflow-x:auto;}
+.table-scroll table{min-width:420px;}
+.calc{background:#f7f9fc;border:1px dashed #c9d3e6;border-radius:12px;padding:14px 16px;margin:10px 0 6px;font-size:14.5px;max-width:420px;}
+.calc-title{font-weight:700;color:var(--navy);margin-bottom:8px;}
+.calc-row{display:flex;justify-content:space-between;padding:3px 0;color:#33363d;}
+.calc-row.total{border-top:1px solid #c9d3e6;margin-top:6px;padding-top:8px;font-weight:800;color:var(--navy);}
+.calc-row.total span:last-child{color:var(--accent);font-size:16px;}
+.summary-box{background:var(--navy);color:#fff;border-radius:14px;padding:18px 18px 8px;margin-top:22px;}
+.summary-title{font-weight:800;font-size:15px;margin-bottom:10px;}
+section.block .summary-box ul{list-style:none;padding:0;margin:0 0 10px;}
+section.block .summary-box li{margin:0;display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.12);font-size:14px;color:#dbe4f5;}
+.summary-box li b{color:#ffd76a;white-space:nowrap;}
+section.block .summary-box p{font-size:13px;color:#b9c6e0;margin:0 0 10px;}
+
+/* 핵심 안내 */
+.keypoints{background:var(--card);border:2px solid var(--navy);border-radius:var(--radius);padding:18px 20px;margin:-28px 0 18px;box-shadow:0 8px 24px rgba(18,39,77,0.12);position:relative;}
+.kp-title{font-weight:800;font-size:14px;color:var(--navy);margin-bottom:12px;}
+.kp{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-top:1px dashed var(--border);}
+.kp:first-of-type{border-top:0;padding-top:0;}
+.kp-icon{font-size:26px;line-height:1;flex:0 0 auto;margin-top:2px;}
+.kp b{font-size:16px;color:var(--text);}
+.kp p{margin:4px 0 0;font-size:14px;color:#33363d;}
+.kp u{text-decoration:none;background:linear-gradient(transparent 60%,#ffe08a 60%);font-weight:700;}
+.kp.holiday b{color:#c0392b;}
+.kp-compare{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px;}
+.kpc{border-radius:10px;padding:10px 12px;font-size:13.5px;line-height:1.45;}
+.kpc span{display:block;font-size:12px;font-weight:700;opacity:.8;margin-bottom:2px;}
+.kpc strong{font-size:15px;}
+.kpc.ok{background:var(--ok-bg);border:1px solid var(--ok-border);color:#1b6a3a;}
+.kpc.no{background:var(--warn-bg);border:1px solid var(--warn-border);color:#7a5a00;}
+.callout.holiday-callout{background:#fff1f0;border:1.5px solid #f3a29a;color:#8a2a20;font-size:14.5px;}
+.callout.holiday-callout strong{font-size:16px;margin-bottom:4px;}
+.notice{background:#f4f6fb;border-left:4px solid var(--navy);border-radius:10px;padding:14px 16px;margin:16px 0;}
+.notice-title{font-weight:800;color:var(--navy);margin-bottom:6px;font-size:14.5px;}
+section.block .notice p{font-size:14px;margin:0 0 6px;}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0 6px;}
+.cmp-card{border-radius:14px;padding:16px;border:1.5px solid;}
+.cmp-card.personal{background:var(--warn-bg);border-color:var(--warn-border);}
+.cmp-card.medical{background:var(--ok-bg);border-color:var(--ok-border);}
+.cmp-tag{display:inline-block;font-weight:800;font-size:15px;color:var(--navy);}
+.cmp-ex{font-size:13px;color:var(--sub);margin:2px 0 10px;}
+.cmp-no{font-size:13.5px;font-weight:700;color:#b54708;margin-bottom:8px;}
+.cmp-yes{font-size:14px;line-height:1.5;color:#33363d;background:rgba(255,255,255,.7);border-radius:10px;padding:10px 12px;}
+.cmp-yes b{font-size:15px;color:var(--navy);}
+.btn{display:inline-block;background:var(--navy);color:#fff;text-decoration:none;font-weight:800;font-size:15px;padding:12px 20px;border-radius:12px;margin:4px 0 6px;}
+.btn:hover{background:#1e3a6e;}
+
 @media (max-width:600px){
 .toc ol{ grid-template-columns:1fr; }
 .contacts{ grid-template-columns:1fr; }
+.compare{ grid-template-columns:1fr; }
+.keypoints{ padding:16px; }
+.kp-icon{ display:none; }
+.kpc strong{ font-size:14.5px; }
 .hero h1{ font-size:24px; }
 section.block{ padding:22px 18px; }
 }
@@ -340,6 +401,23 @@ section.block{ padding:22px 18px; }
 </div>
 
 <div class="wrap">
+
+<div class="keypoints">
+<div class="kp-title">📌 문의가 가장 많은 내용이에요</div>
+<div class="kp holiday">
+<div class="kp-icon">📅</div>
+<div><b>공휴일에도 정상 수업합니다</b>
+<p>설날·추석 <u>명절 연휴만 휴강</u>하며, 그 외 모든 공휴일과 대체공휴일에는 정상 수업이 진행됩니다.</p></div>
+</div>
+<div class="kp absence">
+<div class="kp-icon">🩹</div>
+<div><b>결석 사유에 따라 처리 방법이 달라요</b>
+<div class="kp-compare">
+<div class="kpc ok"><span>부상 · 질병</span>진료기록 제출 시<br><strong>이월 가능</strong></div>
+<div class="kpc no"><span>여행 · 개인 일정</span>환불·이월 없이<br><strong>보강으로만 제공</strong></div>
+</div></div>
+</div>
+</div>
 
 <nav class="toc">
 <h2>목차</h2>
@@ -359,6 +437,7 @@ section.block{ padding:22px 18px; }
 </ol>
 </nav>
 
+
 <section class="block" id="s1">
 <h2><span class="num">1</span>운영 원칙</h2>
 <p><strong>취미반은 '클럽 회원제'로 운영됩니다.</strong></p>
@@ -368,37 +447,89 @@ section.block{ padding:22px 18px; }
 
 <section class="block" id="s2">
 <h2><span class="num">2</span>월 회비 안내</h2>
-<p>취미반 회비는 <strong>자리 확보 비용(회원권)</strong>입니다. 수업 유형과 운영 주차에 따라 아래와 같이 적용됩니다.</p>
+<p>클럽반은 <strong>해당 월의 실제 수업 횟수</strong>에 따라 월회비가 산정됩니다.<br>
+월별로 해당 요일이 4회 있는 달과 5회 있는 달이 있어 월회비가 달라질 수 있습니다.</p>
+<p style="color:var(--sub); font-size:13.5px;">※ 개인 결석과 관계없이, 그 달에 편성된 수업 횟수를 기준으로 합니다.</p>
 
-<div class="fee-group">
-<div class="fee-title">⚾ 1시간 30분 수업 <span class="fee-sub">(월~토요반)</span></div>
+<div class="fee-card">
+<div class="fee-head">
+<div><span class="fee-no">①</span> 일반 클럽 <span class="fee-sub">90분 수업</span></div>
+<div class="per">회당 <b>40,000원</b></div>
+</div>
+<div class="chips"><span>월~금 클럽</span><span>토요일 꿈돌이</span><span>토요일 저학년</span><span>토요일 고학년</span></div>
 <table>
-<tr><th>운영 주차</th><th>월 회비</th></tr>
-<tr><td>4주 운영</td><td class="num">160,000원</td></tr>
-<tr><td>5주 운영</td><td class="num">200,000원</td></tr>
+<tr><th>월 수업 횟수</th><th>월회비</th></tr>
+<tr><td>4회</td><td class="num">160,000원</td></tr>
+<tr><td>5회</td><td class="num">200,000원</td></tr>
 </table>
 </div>
 
-<div class="fee-group">
-<div class="fee-title">🧤 2시간 수업 <span class="fee-sub">(토요 주니어반 / 일요반)</span></div>
+<div class="fee-card">
+<div class="fee-head">
+<div><span class="fee-no">②</span> 주니어·일요일 클럽 <span class="fee-sub">120분 수업</span></div>
+<div class="per">회당 <b>45,000원</b></div>
+</div>
+<div class="chips"><span>토요일 주니어</span><span>일요일 클럽</span></div>
 <table>
-<tr><th>운영 주차</th><th>월 회비</th></tr>
-<tr><td>4주 운영</td><td class="num">180,000원</td></tr>
-<tr><td>5주 운영</td><td class="num">225,000원</td></tr>
+<tr><th>월 수업 횟수</th><th>월회비</th></tr>
+<tr><td>4회</td><td class="num">180,000원</td></tr>
+<tr><td>5회</td><td class="num">225,000원</td></tr>
 </table>
 </div>
 
-<div class="callout gold">
-<strong>🏅 형제 할인 / 주 2회 등록 할인 / 추천인 할인</strong>
-전체 월회비에서 <span class="amount">30,000원</span> 할인됩니다.
+<h3>⚾ 주 2회 수강 할인</h3>
+<p>한 학생이 주 2회 클럽을 수강하는 경우, <strong>두 수업의 월회비를 합산한 금액에서 30,000원</strong>을 할인해드립니다.</p>
+<p style="font-size:13.5px; color:var(--sub); margin-bottom:0;">예) 회당 40,000원 수업을 주 2회 수강하는 경우</p>
+<div class="table-scroll">
+<table>
+<tr><th>월 총 수업 횟수</th><th>정상 수강료</th><th>할인</th><th>최종 월회비</th></tr>
+<tr><td>8회</td><td>320,000원</td><td class="minus">-30,000원</td><td class="num">290,000원</td></tr>
+<tr><td>9회</td><td>360,000원</td><td class="minus">-30,000원</td><td class="num">330,000원</td></tr>
+<tr><td>10회</td><td>400,000원</td><td class="minus">-30,000원</td><td class="num">370,000원</td></tr>
+</table>
+</div>
+<p>40,000원 수업과 45,000원 수업을 함께 수강하는 경우에도, 각각의 수업 횟수에 따른 월회비를 계산한 뒤 총액에서 30,000원을 할인합니다.</p>
+<div class="calc">
+<div class="calc-title">예) 일반 클럽 4회 + 주니어 클럽 4회</div>
+<div class="calc-row"><span>일반 클럽 4회</span><span>160,000원</span></div>
+<div class="calc-row"><span>주니어 클럽 4회</span><span>+ 180,000원</span></div>
+<div class="calc-row"><span>주 2회 할인</span><span class="minus">- 30,000원</span></div>
+<div class="calc-row total"><span>월회비</span><span>310,000원</span></div>
 </div>
 
-<p style="color:var(--sub); font-size:13.5px;">※ 설날·추석 연휴를 제외한 공휴일 및 대체공휴일은 정상 수업이 진행됩니다.</p>
+<h3>👨‍👩‍👦 형제 할인</h3>
+<p>형제 2명이 함께 수강하는 경우에도 각 학생의 해당 월 수업 횟수에 따른 월회비를 먼저 계산한 뒤, <strong>총액에서 30,000원</strong>을 할인해드립니다.</p>
+
+<div class="summary-box">
+<div class="summary-title">✔️ 한눈에 정리하면</div>
+<ul>
+<li><span>일반 클럽 (90분)</span><b>회당 40,000원</b></li>
+<li><span>주니어·일요일 클럽 (120분)</span><b>회당 45,000원</b></li>
+<li><span>주 2회 수강</span><b>합산 월회비 − 30,000원</b></li>
+<li><span>형제 2명 수강</span><b>합산 월회비 − 30,000원</b></li>
+</ul>
+<p>월별 수업 횟수에 따라 월회비가 달라질 수 있으며, 매월 해당 월의 수업 횟수를 기준으로 계산하여 안내드립니다 :)</p>
+</div>
+
+<div class="callout holiday-callout">
+<strong>📅 공휴일에도 정상 수업합니다</strong>
+설날·추석 <b>명절 연휴를 제외한 모든 공휴일 및 대체공휴일</b>에는 정상 수업이 진행되며, 월회비도 이 기준으로 산정됩니다.
+</div>
+
+<div class="notice">
+<div class="notice-title">📢 2026년 9월 회비 조정 안내</div>
+<p>개교 이후 지금까지 수업료를 인상하지 않고 운영해왔으나, 임대료·시설 유지보수비·공과금 등 운영비 상승으로 <strong>2026년 9월부터 월요일 클럽 월 회비를 150,000원에서 160,000원(월 4회 기준)</strong>으로 조정하였습니다.</p>
+<p>조정 금액은 월 10,000원으로, 회당 약 2,500원 수준입니다. 아이들이 안전하고 즐겁게 운동할 수 있는 환경을 유지하기 위한 결정인 만큼 너그러운 이해 부탁드립니다.</p>
+</div>
 
 <h3>자주 묻는 질문</h3>
 <details class="faq">
 <summary>이번 달은 3번만 참석하는데 3회만 결제할 수 있나요?</summary>
-<div class="a">아쉽지만 어렵습니다. 학생마다 원하는 횟수만 결제하는 방식으로 운영할 경우 정원 관리, 보강 운영, 대기 학생 관리, 회원 간 형평성에 어려움이 발생하기 때문에 모든 회원에게 동일한 기준을 적용하고 있습니다.</div>
+<div class="a">아쉽지만 어렵습니다. 학생마다 원하는 횟수만 결제하는 방식으로 운영할 경우 정원 관리, 보강 운영, 대기 학생 관리, 회원 간 형평성에 어려움이 발생하기 때문에 모든 회원에게 동일한 기준을 적용하고 있습니다. 결석한 수업은 30일 이내 보강으로 참여하실 수 있습니다.</div>
+</details>
+<details class="faq">
+<summary>공휴일(어린이날, 광복절 등)에도 수업하나요?</summary>
+<div class="a">네, <strong>정상 수업합니다.</strong> 설날·추석 명절 연휴만 휴강하며, 그 외 모든 공휴일과 대체공휴일은 평소와 같이 수업이 진행됩니다. 공휴일에 참석이 어려우면 30일 이내 다른 요일로 보강해 주세요.</div>
 </details>
 </section>
 
@@ -417,13 +548,20 @@ section.block{ padding:22px 18px; }
 기업은행 010-9004-2020 (예금주: 분당구B리틀야구단)
 </div>
 
+<h3>결제선생</h3>
+<p>매월 성남사랑상품권 이용 회원을 제외한 학부모님께 <strong>'결제선생'으로 결제 요청을 일괄 발송</strong>해드립니다. 다른 결제 방식을 이용하시다가 결제선생으로 바꾸고 싶으시면 링크를 요청해 주세요. 결제 링크를 다시 보내드립니다.</p>
+
 <h3>성남사랑상품권 이용 방법</h3>
 <div class="flow">
 <span class="step">Chak 앱</span><span class="arrow">→</span>
 <span class="step">원격결제</span><span class="arrow">→</span>
 <span class="step">"김광림 야구학교" 검색</span><span class="arrow">→</span>
-<span class="step">수업 선택</span>
+<span class="step">수업 요일 선택</span>
 </div>
+<ul>
+<li>QR 결제가 아닌 <strong>'원격결제'</strong> 메뉴에서 결제해 주세요.</li>
+<li>수업이 <strong>5회 있는 달</strong>에는 <strong>"월~토 월5회"</strong> 항목을 선택해 주세요.</li>
+</ul>
 
 <h3>결제 기한</h3>
 <div class="callout warn">
@@ -434,11 +572,20 @@ section.block{ padding:22px 18px; }
 
 <section class="block" id="s4">
 <h2><span class="num">4</span>결석 및 보강</h2>
-<h3>개인 사정으로 결석하는 경우</h3>
-<p>여행, 가족 행사, 학원 일정, 개인 일정 등으로 결석하는 경우 환불 및 이월은 어렵습니다.</p>
-<div class="callout ok">
-<strong>대신, 결석일 기준 30일 이내에</strong>
-빈자리가 있는 다른 반으로 보강이 가능합니다.
+<p>결석 사유에 따라 처리 기준이 다릅니다. <strong>모든 회원에게 동일하게 적용</strong>되는 기준이니 꼭 확인해 주세요.</p>
+
+<div class="compare">
+<div class="cmp-card personal">
+<div class="cmp-tag">개인 사정 결석</div>
+<div class="cmp-ex">여행 · 가족 행사 · 학원 · 개인 일정 등</div>
+<div class="cmp-no">✕ 환불 불가 &nbsp; ✕ 이월 불가</div>
+<div class="cmp-yes">⚾ <b>보강으로만 제공</b><br>결석일 기준 30일 이내, 빈자리가 있는 다른 요일 수업에 참여</div>
+</div>
+<div class="cmp-card medical">
+<div class="cmp-tag">부상 · 질병</div>
+<div class="cmp-ex">장기 치료로 정상적인 수업 참여가 어려운 경우</div>
+<div class="cmp-yes">📄 <b>진료기록 제출 시 이월 가능</b><br>별도 상담 후 회비 이월 또는 휴식 처리</div>
+</div>
 </div>
 
 <h3>보강 진행 순서</h3>
@@ -447,27 +594,43 @@ section.block{ padding:22px 18px; }
 <span class="step">빈자리 확인</span><span class="arrow">→</span>
 <span class="step">참석 확정</span>
 </div>
+<a class="btn" href="https://jesus861226.github.io/baseball/" target="_blank" rel="noopener">⚾ 보강 수업 신청하기</a>
+
 <h3>보강 시 유의사항</h3>
 <ul>
 <li>보강은 빈자리가 있을 때만 가능합니다.</li>
 <li>인기가 많은 요일은 조기 마감될 수 있습니다.</li>
 <li>학년 및 수업 수준에 따라 다른 반으로 안내될 수 있습니다.</li>
+<li><strong>보강 수업은 직접 등하원</strong>이 원칙입니다. (셔틀 안내 참고)</li>
 </ul>
+
+<details class="faq">
+<summary>가족 여행으로 2주 빠지는데 다음 달로 이월되나요?</summary>
+<div class="a">개인 사정으로 인한 결석은 환불·이월이 어렵고, <strong>결석일 기준 30일 이내 보강</strong>으로 참여하실 수 있습니다. 여행 일정이 미리 정해졌다면 빈자리가 많은 요일로 일찍 보강을 신청해 주세요.</div>
+</details>
+<details class="faq">
+<summary>아이가 다쳐서 한동안 못 나가요. 어떻게 하나요?</summary>
+<div class="a">부상·질병으로 장기간 참여가 어려운 경우 <strong>진료기록(진단서 등)을 제출</strong>해 주시면 상담 후 회비 이월 또는 휴식 처리를 도와드립니다.</div>
+</details>
 </section>
 
 <section class="block" id="s5">
 <h2><span class="num">5</span>질병 및 부상</h2>
-<p>장기 치료가 필요한 경우에는 <strong>진단서 제출 시</strong> 아래가 가능합니다.</p>
+<p>장기간 치료가 필요한 질병이나 부상으로 정상적인 수업 참여가 어려운 경우, <strong>진료기록(진단서 등)을 제출</strong>하시면 별도 상담 후 아래 처리가 가능합니다.</p>
 <ul class="checklist">
 <li>회비 이월</li>
 <li>휴식 처리</li>
 </ul>
-<p style="color:var(--sub); font-size:13.5px;">※ 개인 사정 결석과는 운영 기준이 다릅니다.</p>
+<div class="callout warn">
+<strong>개인 사정 결석과는 기준이 다릅니다.</strong>
+여행·가족 행사·학원 등 개인 사정으로 인한 결석은 이월되지 않으며 <b>보강으로만</b> 참여하실 수 있습니다.
+</div>
 </section>
 
 <section class="block" id="s6">
 <h2><span class="num">6</span>휴식 및 재등록</h2>
 <p>장기간 수업 참여가 어려운 경우에는 휴식 신청이 가능합니다. 다만 휴식 기간에는 해당 자리가 대기 학생에게 배정될 수 있습니다.</p>
+<p>휴식을 계획하고 계시다면 <strong>미리 말씀해 주세요.</strong> 대기 중인 학생들이 원활하게 등록할 수 있습니다.</p>
 <p>복귀 시에는 당시 정원에 따라 아래와 같이 안내드립니다.</p>
 <ul class="checklist">
 <li>즉시 등록</li>
